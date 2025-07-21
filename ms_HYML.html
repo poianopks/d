@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML/CSS/JS 기초 왕초보 유치원 🌼</title>
+  <style>
+    body {
+      background: #f8f9fa;
+      color: #212529;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #495057;
+      border-bottom: 2px solid #adb5bd;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    details {
+      background: #fff;
+      border-radius: 5px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    summary {
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      list-style: none;
+    }
+    details[open] summary {
+      background: #e9ecef;
+    }
+    details p, details pre {
+      margin: 0;
+      padding: 0 1rem 1rem 1rem;
+    }
+    pre {
+      background: #212529;
+      color: #f1f3f5;
+      padding: 0.75rem;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML/CSS/JS 기초 왕초보 유치원 🌼</h1>
+  </header>
+  <div class="container">
+
+    <h2>HTML 기초 1~10</h2>
+
+    <details>
+      <summary>1. HTML이란?</summary>
+      <p>웹 페이지의 뼈대를 만드는 언어입니다. 텍스트, 이미지, 링크를 구조화합니다.</p>
+      <pre>
+<!-- HTML 문서의 기본 구조 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>문서 제목</title>
+  </head>
+  <body>
+    내용
+  </body>
+</html></pre>
+    </details>
+
+    <details>
+      <summary>2. 요소(Element)와 태그(Tag)</summary>
+      <p>시작 태그와 종료 태그로 감싼 콘텐츠가 하나의 요소가 됩니다.</p>
+      <pre>
+<!-- p 요소 예제 -->
+<p>이것은 문단입니다.</p></pre>
+    </details>
+
+    <details>
+      <summary>3. 속성(Attribute)</summary>
+      <p>태그에 추가 정보를 넣을 때 사용합니다.</p>
+      <pre>
+<a href="https://example.com" target="_blank">링크</a></pre>
+    </details>
+
+    <details>
+      <summary>4. 제목(Heading)</summary>
+      <p>h1~h6으로 문서 구조를 구분하고 SEO에도 중요합니다.</p>
+      <pre>
+<h1>큰 제목</h1>
+<h2>중간 제목</h2></pre>
+    </details>
+
+    <details>
+      <summary>5. 문단(Paragraph)과 줄바꿈</summary>
+      <p>p 태그로 문단, br 태그로 줄바꿈을 합니다.</p>
+      <pre>
+<p>첫 번째 문단</p>
+<p>두 번째 문단<br>줄바꿈 포함</p></pre>
+    </details>
+
+    <details>
+      <summary>6. 목록(List)</summary>
+      <p>순서 있는(ol) 목록, 순서 없는(ul) 목록을 만들 수 있습니다.</p>
+      <pre>
+<ul>
+  <li>항목 A</li>
+  <li>항목 B</li>
+</ul>
+
+<ol>
+  <li>첫 번째</li>
+  <li>두 번째</li>
+</ol></pre>
+    </details>
+
+    <details>
+      <summary>7. 링크(Link)</summary>
+      <p>다른 페이지나 섹션으로 이동시키는 기능입니다.</p>
+      <pre>
+<a href="#section">이동하기</a>
+<a href="https://naver.com" rel="noopener">네이버</a></pre>
+    </details>
+
+    <details>
+      <summary>8. 이미지(Image)</summary>
+      <p>웹에 이미지를 삽입할 때 img 태그를 사용합니다.</p>
+      <pre>
+<img src="logo.png" alt="로고" width="200"></pre>
+    </details>
+
+    <details>
+      <summary>9. 테이블(Table)</summary>
+      <p>표 형태로 데이터를 표현합니다.</p>
+      <pre>
+<table>
+  <tr><th>이름</th><th>점수</th></tr>
+  <tr><td>가나</td><td>90</td></tr>
+</table></pre>
+    </details>
+
+    <details>
+      <summary>10. 폼(Form)</summary>
+      <p>사용자로부터 입력을 받을 때 사용합니다.</p>
+      <pre>
+<form action="/submit" method="post">
+  <input type="text" name="name" placeholder="이름">
+  <button type="submit">제출</button>
+</form></pre>
+    </details>
+
+    <h2>CSS 기초 11~20</h2>
+
+    <details>
+      <summary>11. CSS란?</summary>
+      <p>HTML에 스타일을 입혀 색상, 레이아웃, 타이포그래피를 제어합니다.</p>
+      <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+    </details>
+
+    <details>
+      <summary>12. 선택자(Selector)</summary>
+      <p>element, .class, #id 등으로 HTML 요소를 선택합니다.</p>
+      <pre>
+/* 태그 선택자 */
+p { color: #333; }
+
+/* 클래스 선택자 */
+.highlight { background: yellow; }
+
+/* 아이디 선택자 */
+#logo { width: 100px; }</pre>
+    </details>
+
+    <details>
+      <summary>13. 색상(Color)과 배경(Background)</summary>
+      <p>색상, 배경 이미지, 배경 크기를 지정할 수 있습니다.</p>
+      <pre>
+body {
+  background: #f0f0f0;
+  color: #212529;
+}</pre>
+    </details>
+
+    <details>
+      <summary>14. 텍스트 스타일링</summary>
+      <p>폰트 크기, 굵기, 정렬, 줄 높이를 설정합니다.</p>
+      <pre>
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}</pre>
+    </details>
+
+    <details>
+      <summary>15. 박스 모델(Box Model)</summary>
+      <p>margin, border, padding, content 구조를 이해합니다.</p>
+      <pre>
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}</pre>
+    </details>
+
+    <details>
+      <summary>16. 레이아웃: Display & Position</summary>
+      <p>block, inline, inline-block, position 속성으로 배치합니다.</p>
+      <pre>
+.container { display: flex; position: relative; }
+.item { position: absolute; top: 10px; left: 10px; }</pre>
+    </details>
+
+    <details>
+      <summary>17. Flexbox</summary>
+      <p>축 정렬, 간격 분배가 쉬운 레이아웃 모듈입니다.</p>
+      <pre>
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</pre>
+    </details>
+
+    <details>
+      <summary>18. Grid</summary>
+      <p>행과 열 단위의 2차원 레이아웃을 만들 수 있습니다.</p>
+      <pre>
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}</pre>
+    </details>
+
+    <details>
+      <summary>19. 미디어 쿼리(Responsive)</summary>
+      <p>화면 크기에 따라 다른 스타일을 적용합니다.</p>
+      <pre>
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+}</pre>
+    </details>
+
+    <details>
+      <summary>20. 전환(Transition) & 애니메이션(Animation)</summary>
+      <p>부드러운 변화와 반복 애니메이션을 정의합니다.</p>
+      <pre>
+button {
+  transition: background 0.3s;
+}
+button:hover {
+  background: #0056b3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in { animation: fadeIn 1s ease-in; }</pre>
+    </details>
+
+    <h2>JavaScript 기초 21~30</h2>
+
+    <details>
+      <summary>21. JavaScript란?</summary>
+      <p>웹 페이지에 동적인 기능을 추가하는 스크립팅 언어입니다.</p>
+      <pre>
+&lt;script&gt;
+  console.log("Hello, JS!");
+&lt;/script&gt;</pre>
+    </details>
+
+    <details>
+      <summary>22. 변수와 데이터 타입</summary>
+      <p>let, const 키워드로 변수를 선언하고 숫자, 문자열, 불리언을 사용합니다.</p>
+      <pre>
+let name = "가나";
+const age = 28;
+let isStudent = true;</pre>
+    </details>
+
+    <details>
+      <summary>23. 연산자</summary>
+      <p>산술, 비교, 논리 연산자를 사용해 값을 계산하고 판단합니다.</p>
+      <pre>
+console.log(5 + 3);   // 8
+console.log(4 > 2);   // true
+console.log(true && false); // false</pre>
+    </details>
+
+    <details>
+      <summary>24. 조건문(if)</summary>
+      <p>if, else if, else로 분기 처리를 합니다.</p>
+      <pre>
+let score = 85;
+if (score >= 90) {
+  console.log("A학점");
+} else if (score >= 80) {
+  console.log("B학점");
+} else {
+  console.log("C 이하");
+}</pre>
+    </details>
+
+    <details>
+      <summary>25. 반복문(for & while)</summary>
+      <p>for와 while문으로 반복 작업을 처리합니다.</p>
+      <pre>
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let n = 3;
+while (n > 0) {
+  console.log(n);
+  n--;
+}</pre>
+    </details>
+
+    <details>
+      <summary>26. 함수(Function)</summary>
+      <p>재사용 가능한 코드 블록을 정의하고 호출합니다.</p>
+      <pre>
+function add(a, b) {
+  return a + b;
+}
+console.log(add(2, 3));</pre>
+    </details>
+
+    <details>
+      <summary>27. DOM 조작</summary>
+      <p>document 객체로 요소를 선택하고 콘텐츠를 변경합니다.</p>
+      <pre>
+let title = document.querySelector("h1");
+title.textContent = "안녕하세요!";</pre>
+    </details>
+
+    <details>
+      <summary>28. 이벤트 핸들링</summary>
+      <p>버튼 클릭, 마우스 오버 등의 이벤트를 처리합니다.</p>
+      <pre>
+let btn = document.querySelector("button");
+btn.addEventListener("click", () =&gt; {
+  alert("버튼 클릭!");
+});</pre>
+    </details>
+
+    <details>
+      <summary>29. AJAX & Fetch</summary>
+      <p>서버에서 비동기 데이터를 가져와 화면을 업데이트합니다.</p>
+      <pre>
+fetch("data.json")
+  .then(res =&gt; res.json())
+  .then(data =&gt; console.log(data));</pre>
+    </details>
+
+    <details>
+      <summary>30. 미니 프로젝트: 이미지 슬라이더</summary>
+      <p>간단한 슬라이더를 만들어 setInterval로 자동 전환 기능을 구현합니다.</p>
+      <pre>
+let imgs = document.querySelectorAll(".slider img");
+let idx = 0;
+setInterval(() =&gt; {
+  imgs[idx].classList.toggle("visible");
+  idx = (idx + 1) % imgs.length;
+  imgs[idx].classList.toggle("visible");
+}, 3000);</pre>
+    </details>
+
+  </div>
+</body>
+</html>
